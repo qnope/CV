@@ -1,0 +1,68 @@
+\documentclass[12pt,a4paper]{moderncv}
+\moderncvtheme[purple]{classic}
+\usepackage[utf8]{inputenc}
+\usepackage[inline]{enumitem}
+% Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
+\usepackage[top=0.9cm, bottom=0.9cm, left=1.5cm, right=1.5cm]{geometry}
+% Largeur de la colonne de gauche pour les dates
+\setlength{\hintscolumnwidth}{2.7cm}
+\firstname{Antoine}
+\familyname{MORRIER}
+\title{C++ Software Engineer}
+%\address{2 rue qui n'existe pas}{63000 Clermont-Ferrand}
+\email{antoine.morrier@gmail.com}
+\homepage{cpp-rendering.io}
+\mobile{06 63 97 04 67}
+\social[github]{qnope}
+\social[twitter]{cpp-rendering}
+\extrainfo{27 ans -- Permis B}
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+\cventry{2019--Now}{C++ Software Engineer}{Diagdev}{Castries}{}{Working with modern C++ (C++17) and Qt5 framework on Hematology-related devices.
+\begin{itemize}%
+  \itemsep0em 
+  \item Implement a variant-based message communication with the underlying micro-controlers
+  \item Implementation of different tools to have easier (with less boilerplate) interactions between the C++ part and the QML part
+  \item Participating in the development of the classification algorithm of blood cells
+  \item Made some workshops to present new modern C++ features and to show how they can be applied to our codebase to make it easier and more efficient
+\end{itemize}
+Used technologies: C++, Python, QML, Qt, QtQuick
+}
+\cventry{2017--2018}{C++ Software Engineer}{Ausy / Airbus}{Sophia Antipolis}{}{Work on a software that eases to find and visualize tie points and ground control points on pictures taken by drones, aircrafts or satellites that are used to recreate 3D models of the overflew areas or to make a map of a region. I have developed and integrated into this software multithreaded module, user interfaces, and projection services between different geodetic systems. I also developped a new 3D features: track visualization and visualization of nongeolocalized model 3D.
+\newline
+Used technologies: C++, Qt
+}
+\cventry{2017}{C++ OpenGL Intern}{Dassault Systèmes}{Vélizy-Villacoublay}{}{To improve the real-time rendering of CAD models, we need to simulate the phenomenon of shading by the model itself of the light resulting from the HDR Image of the environment. To do this, I have integrated the Distance Field Ambient Occlusion and Voxel Based Ambient Occlusion algorithms into the real-time visualization component of Dassault Systèmes.
+\newline
+Used technologies : C++, OpenGL, GLSL}
+\cventry{2017}{Temporary}{Télécom SudParis}{Evry}{}{Made and presented a complete modern OpenGL course for engineering student in Télécom SudParis and ENSIIE.}
+
+\section{Education}
+\cventry{2014--2018}{Engineer}{Télécom SudParis}{Evry, France}{}{High-Tech Imaging: learn about image processing}  % arguments 3 to 6 can be left empty
+\cventry{2012--2014}{Preparatory class TSI}{Lycée Jean Baptiste Dumas}{Alès}{}{Two years intensive program preparing for the national competive exam for entry to engineering schools. Revelant coursework: Maths, Physic}
+
+\section{Skills}
+\cvdoubleitem{\textbf{Language}}{C++ 20, QML, Rust}{\textbf{Framework}}{Qt and QtQuick}
+\cvdoubleitem{\textbf{Rendering}}{OpenGL 4+ / Vulkan}{\textbf{GPGPU}}{GLSL(Compute Shaders)}
+
+\section{Interests}
+\cvdoubleitem{Cars}{Drive on track}{Sports}{Taekwondo and Badminton}
+\end{document}
