@@ -3,28 +3,28 @@
 \usepackage[utf8]{inputenc}
 \usepackage[inline]{enumitem}
 % Marge aux 4 coins de la page, ici elles sont réduites pour gagner de la place
-\usepackage[top=0.9cm, bottom=0.9cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[top=1.2cm, bottom=1.2cm, left=1.5cm, right=1.5cm]{geometry}
 % Largeur de la colonne de gauche pour les dates
 \setlength{\hintscolumnwidth}{2.7cm}
 \firstname{Antoine}
 \familyname{MORRIER}
 \title{C++ Software Engineer}
 %\address{2 rue qui n'existe pas}{63000 Clermont-Ferrand}
-\email{antoine.morrier@gmail.com}
+\email{antoine@morria.tech}
 \homepage{cpp-rendering.io}
 \mobile{+33 6 63 97 04 67}
 \social[github]{qnope}
 \social[twitter]{cpp-rendering}
-\extrainfo{30 years old -- Driving licence}
+\extrainfo{31 years old -- Driving licence}
 
-% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+% bibliography adjustments (only useful if you make citations in your resume, or print a list of publications using BibTeX)
 %   to show numerical labels in the bibliography (default is to show no labels)
 %\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
 \renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
 %   to redefine the bibliography heading string ("Publications")
 %\renewcommand{\refname}{Articles}
 
-% bibliography with mutiple entries
+% bibliography with multiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
 %----------------------------------------------------------------------------------
@@ -40,23 +40,23 @@
 \section{Experience}
 
 \cventry{2023--Present}{Freelance Software Developer}{}{Montpellier}{}{
-Modern C++, Qt/QML, Workshops, Training, consulting, and software architecture.
+Modern C++, Qt/QML, Workshops, Training, Consulting, and Software Architecture.
 \newline
-Administrator of C++ Meetup Montpellier
+Organizer of the C++ Meetup Montpellier
 \newline
-Writing C++ and rendering articles on my blog: \href{https://cpp-rendering.io}{cpp-rendering.io}.
+Writing articles about C++ and rendering on my blog: \href{https://cpp-rendering.io}{cpp-rendering.io}.
 \begin{itemize}%
   \itemsep0em
   \item \textbf{SLB (Schlumberger, 2023--Present)}: Techlog Team%
   \newline
   Techlog is a market-leading digital solution for the wellbore industry.
   It is used by geologists and petrophysicists. Working within a team of 30 people, I achieved
-  the following tasks.
+  the following.
     \begin{itemize}[itemsep=0em, topsep=0em, leftmargin=1em]
       \item Designed a compile-time guaranteed thread-safe framework.
-      \item Refactored core components of Techlog Software.
+      \item Refactored core components of the Techlog software.
       \item Improved overall performance.
-      \item Delivered workshops and training sessions to present new modern C++ features and show how they can be applied to make the codebase easier and more efficient.
+      \item Delivered workshops and training sessions to present new modern C++ features and show how they can be applied to make the codebase simpler and more efficient.
     \end{itemize}
   \item \textbf{Diagdev (2025--2 months)}: Developer team%
   \newline
@@ -64,7 +64,7 @@ Writing C++ and rendering articles on my blog: \href{https://cpp-rendering.io}{c
   \begin{itemize}[itemsep=0em, topsep=0em, leftmargin=1em]
     \item 22 minutes to 9 minutes for a full build.
     \item Faster incremental builds (as fewer files need to be recompiled).
-    \item Estimated gain: 0.8 day per week per developer.
+    \item Estimated gain: 0.8 days per week per developer.
     \item Some bugs fixed.
   \end{itemize}
 \end{itemize}
@@ -92,19 +92,20 @@ Used technologies: C++, Python, QML, Qt, QtQuick
 
 \vspace{0.5em}
 \cventry{2017--2018}{C++ Software Engineer}{Ausy / Airbus}{Sophia Antipolis}{}{
+Airbus Defence and Space develops Pixel Factory, a software solution for analyzing satellite images or aerial views (for example, from an aircraft). I was assigned to the team developing visualization software for bundle adjustment results. From control points extracted from satellite images, we would locate them in the associated 3D model. We were 2 developers, plus a project manager.
 \begin{itemize}[label=\labelitemii]
   \itemsep0em
   \item Worked on software for search and visualization of tie points and ground control points on drone, aerial, and satellite imagery for 3D modeling and mapping.
   \item Developed and integrated multithreaded modules, user interfaces, and services for projection between different geodetic systems.
-  \item Developed new track visualization and non-geolocalized 3D model visualization features.
+  \item Developed new track visualization and non-geolocated 3D model visualization features.
 \end{itemize}
 Used technologies: C++, Qt
 }
 
-\cventry{2017}{Temporary}{Télécom SudParis}{Evry}{}{
+\cventry{2017}{Temporary Instructor}{Télécom SudParis}{Evry}{}{
   \begin{itemize}[label=\labelitemii]
     \itemsep0em
-    \item Made and presented a complete modern OpenGL course for engineering students in Télécom SudParis and ENSIIE.
+    \item Created and delivered a complete modern OpenGL course for engineering students at Télécom SudParis and ENSIIE.
 \end{itemize}
 }
 
@@ -112,12 +113,12 @@ Used technologies: C++, Qt
 \cventry{2014--2018}{Engineering student}{Télécom SudParis}{Evry, France}{}{
   \begin{itemize}[label=\labelitemii]
     \itemsep0em
-    \item High-Tech Imaging: learned about image processing.
+    \item High-Tech Imaging: specialization in image processing.
   \end{itemize}
 }
 
 \section{Skills}
-\cvdoubleitem{\textbf{Language}}{C++ 26, QML, Rust}{\textbf{Framework}}{Qt and QtQuick}
+\cvdoubleitem{\textbf{Languages}}{C++ 26, QML, Rust}{\textbf{Framework}}{Qt and QtQuick}
 \cvdoubleitem{\textbf{Rendering}}{OpenGL 4+ / Vulkan}{\textbf{GPGPU}}{GLSL(Compute Shaders)}
 \cvitem{\textbf{Miscellaneous}}{CMake, Git}
 
